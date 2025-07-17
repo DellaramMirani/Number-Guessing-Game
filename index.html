@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Number Guesing Game</title>
+</head>
+
+<body
+    class="min-h-screen bg-gradient-to-tr from-yellow-100 via-pink-100 to-blue-100 flex justify-center items-center flex-col gap-6 p-8 font-sans text-center">
+    <h1 class="text-4xl font-bold text-purple-600 mb-4 animate-bounce">
+        🎯 Guess the Number!
+    </h1>
+    <p class="text-lg text-gray-700 font-medium">
+        You have 10 tries. Make 'em count! 🔍
+    </p>
+    <input id="input" type="number" min="1" max="100"
+        class="p-3 w-48 border-4 border-fuchsia-400 text-center text-lg rounded-full shadow-md focus:outline-none focus:ring-4 focus:ring-fuchsia-300 transition"
+        placeholder="1-100">
+    <button id="submitBtn"
+        class="bg-pink-400 hover:bg-pink-500 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 shadow-lg hover:scale-105">
+        🎲 Guess
+    </button>
+    <p id="result" class="p-4 text-xl font-semibold text-blue-600"></p>
+    <audio id="winSound" src="sounds/win.wav"></audio>
+    <audio id="loseSound" src="sounds/lose.wav"></audio>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
